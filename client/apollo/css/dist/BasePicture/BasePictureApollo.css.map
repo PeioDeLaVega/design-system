@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/BasePicture/BasePictureCommon.scss","../../src/BasePicture/BasePictureApollo.scss"],"names":[],"mappings":"AAAA,gBAGE,qBAAA,CADA,WAAA,CADA,UCGF","file":"BasePictureApollo.css","sourcesContent":[".af-basepicture {\n  width: 48px;\n  height: 48px;\n  border-radius: 100vmax;\n}\n","@use \"./BasePictureCommon\";\n"]}

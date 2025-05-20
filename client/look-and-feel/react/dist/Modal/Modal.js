@@ -1,0 +1,10 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { forwardRef } from "react";
+import { ModalCore } from "./ModalCore";
+import { Button } from "../Button/Button";
+import { ModalCoreHeader, } from "./components/ModalCoreHeader";
+import { ModalCoreBody } from "./components/ModalCoreBody";
+import { ModalCoreFooter } from "./components/ModalCoreFooter";
+const Modal = forwardRef(({ children, title, submitTitle, cancelTitle, className, onCancel, onSubmit, closeButtonAriaLabel, cancelDisabled, submitDisabled, subtitle, iconTitle, levelTitle, ...props }, ref) => (_jsxs(ModalCore, { className: className, onOutsideTap: onCancel, title: title, ref: ref, ...props, children: [_jsx(ModalCoreHeader, { title: title, subtitle: subtitle, iconTitle: iconTitle, levelTitle: levelTitle, onCancel: onCancel, closeButtonAriaLabel: closeButtonAriaLabel }), _jsx(ModalCoreBody, { children: children }), _jsxs(ModalCoreFooter, { children: [onCancel && cancelTitle && (_jsx(Button, { variant: "secondary", onClick: onCancel, disabled: cancelDisabled, children: cancelTitle })), onSubmit && submitTitle && (_jsx(Button, { variant: "primary", onClick: onSubmit, disabled: submitDisabled, children: submitTitle }))] })] })));
+Modal.displayName = "Modal";
+export { Modal };

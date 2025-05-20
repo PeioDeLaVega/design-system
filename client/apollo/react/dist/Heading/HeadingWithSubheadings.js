@@ -1,0 +1,2 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+export const HeadingWithSubheadings = ({ title, firstSubtitle, secondSubtitle, titleComponent: TitleComponent = "h1", }) => (_jsxs("div", { className: "af-heading__title-container", children: [_jsx(TitleComponent, { className: "af-heading__title", children: title }), firstSubtitle && (_jsx("span", { className: "af-heading__subtitle", children: firstSubtitle })), TitleComponent === "h1" && secondSubtitle && (_jsx("span", { className: "af-heading__subtitle", children: secondSubtitle }))] }));
